@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --mainFont: "Roboto", Arial, sans-serif;
+    --mainColor: #1eb2a6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------- body {
+    background-image: url('../img/bg_2.jpg.webp');
+
+}
+
+.top-nav {
+    height: 100vh;
+    background-image: url('../img/bg_2.jpg.webp');
+    background-size: cover;
+    position: -50px;
+    background-attachment: fixed;
+
+}
+
+.top-nav .acad {
+    font-family: var(--mainFont);
+    font-weight: 800;
+    font-size: 30px;
+    color: #fff;
+}
+
+.top-nav .online {
+    font-family: var(--mainFont);
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+}
+
+.top-nav .social i {
+    
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: rgb(204, 226, 233);
+    color: var(--mainColor);
+    width: 45px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+.social{
+    display:flex;
+    justify-content: flex-end;
+   
+}
+
+.top-nav .social i:nth-of-type(n):hover {
+    color: rgba(204, 226, 233);
+    background-color: rgb(30, 178, 166);
+}
+
+.top-nav .clock .clock-demo {
+    font-size: 38px;
+    color: white;
+    background-color: transparent;
+
+}
+
+.top-nav .phone .phone-demo {
+    font-size: 38px;
+
+
+}
+
+.top-nav .first {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.top-nav .second {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+@media (max-width:992px) {
+    .top-nav .clocks {
+        display: none !important;
+    }
+
+    .top-nav .phones {
+        display: none !important;
+    }
+
+    .top-nav .social {
+
+        justify-content: end;
+    }
+
+}
+
+@media (min-width:771)and(max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-nav .social {
+        display: flex;
+
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:767px) {
+
+    .top-nav .social {
+        display: none !important;
+
+    }
+}
+
+@media (max-width:572px) {
+    .top-nav {
+        background-size: cover;
+        /* Zoom into the image */
+        background-position: 90% center;
+        /* Show up to the right hand */
+    }
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 440px) {
+    .top-nav {
+        background-size: cover;
+        /* Zoom into the image */
+        background-position: 70% center;
+        /* Show up to the right hand */
+    }
+
+    .container {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .top-nav {
+        background-size: cover;
+        /* More zoom */
+        background-position: 50% center;
+        /* Only the left part of the girl */
+    }
+
+}
+
+.nav .navbar {
+    background-color: rgba(245, 241, 241, 0.1);
+    cursor: pointer;
+
+}
+
+.active {
+    color: #1eb2a6 !important;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    font-family: var(--mainFont);
+    font-weight: 500;
+}
+
+.nav .certif a {
+    font-size: 13px;
+    font-weight: 700;
+    background-color: var(--mainColor);
+}
+
+.text-area span {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--mainFont);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-area h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: var(--mainFont);
+}
+
+.text-area p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--mainFont);
+    color: rgba(255, 255, 255, 0.8);
+    width: 530px;
+    line-height: 30px;
+}
+
+.nav .text-area {
+    display: flex;
+    gap: 10px;
+    animation: fade-up 0.6s;
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translatey(100%);
+
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}
+
+.text-area button:nth-of-type(1) {
+    width: 20%;
+    background-color: var(--mainColor);
+    color: white
+}
+
+.text-area button:nth-of-type(2) {
+    width: 20%;
+    background-color: white;
+    color: var(--mainColor);
+}
+
+.text-area button {
+    border: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+nav a.nav-link {
+    padding: 22.4px 25px !important;
+}
+
+nav a.certif {
+    padding-right: 4%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 8%;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--mainFont);
+}
+
+.text-body {
+    height: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-body .text-b {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--mainFont);
+}
+
+.text-body .text-b a {
+    color: white;
+
+    transition: color 0.5s;
+}
+
+.text-body .text-b a:hover {
+    color: #1eb2a6;
+
+}
+
+.explore h2 {
+    font-size: 70px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: var(--mainFont);
+    padding-top: 0;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+.first-f {
+    background-color: var(--mainColor);
+}
+
+.first-f .left-side h2 {
+    font-size: 27px;
+    font-weight: 500;
+    color: white;
+    font-family: var(--mainFont);
+}
+
+.first-f .left-side p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: var(--mainFont);
+}
+
+.right-side {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255);
+    font-family: var(--mainFont);
+}
+
+.first-f {
+    width: 100%;
+    display: flex;
+    padding-left: 60px;
+}
+
+.right-side {
+    padding-left: 60px;
+    position: relative;
+    line-height: 1.5;
+    width: 500px;
+
+}
+
+.right-side input {
+    border: 1px;
+    background-color: transparent;
+    width: 400px;
+
+}
+
+.right-side input:focus {
+    border-color: transparent;
+    outline: none;
+    caret-color: white;
+    color: white;
+}
+
+.right-side input::placeholder {
+    color: white;
+
+}
+
+
+.right-side::after {
+    content: " ";
+    position: absolute;
+    border: 1px solid;
+    border-color: #ced4da;
+    top: 110px;
+    left: 60px;
+    width: 450px;
+
+}
+
+.right-side i {
+    padding-left: 260px;
+}
+
+.cardss img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+.cardss .igs {
+    background-color: #1eb2a6;
+    height: 80px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+
+.cardss .igs img {
+    filter: invert(1);
+    width: 80px;
+    padding: 5px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.cardss .header-content h2 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 39px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--mainFont);
+}
+
+.cardss .header-content i,
+span {
+    color: var(--mainColor)
+}
+
+.cardss .body span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(153, 153, 153);
+    font-family: var(--mainFont);
+
+}
+
+.card .body {
+    padding-top: 10px;
+}
+
+.card .body h5 {
+    padding-left: 6px;
+}
+
+.card .buttons {
+    padding-top: 20px;
+}
+
+.cardss .body h5 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23.4px;
+    color: rgb(30, 178, 166);
+    font-family: var(--mainFont);
+}
+
+.cardss .buttons h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+    color: rgb(30, 178, 166);
+    font-family: var(--mainFont);
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 3px;
+    padding: 8px;
+    margin-left: 3px;
+}
+
+.cardss .card {
+    background-color: white;
+
+}
+
+.cardss {
+    background-color: rgb(248, 248, 248);
+
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.card {
+    width: 400px;
+    border-radius: 0;
+    border: 1px solid transparent;
+    margin-bottom: 25px;
+}
+
+.cardss .buttons a {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    color: rgb(30, 178, 166);
+    font-family: var(--mainFont);
+    border: 1px solid var(--mainColor);
+    background-color: white;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 41%;
+    padding-right: 41%;
+    margin-left: 3px;
+
+}
+
+.cardss .buttons a:hover {
+    color: #fff;
+    background-color: var(--mainColor);
+    transition: all 0.5s;
+}
+
+nav .page-item {
+    border-radius: 5px !important;
+    font-weight: 600;
+
+}
+
+.page-link {
+    background-color: rgb(248, 248, 248);
+
+}
+
+.pag-first .active {
+    background-color: var(--mainColor);
+    color: white !important;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+
+}
+
+.pag-first a:hover {
+    background-color: var(--mainColor);
+    color: white !important;
+    font-weight: 600;
+}
+
+.pag-first a {
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.page-link:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.pagination {
+    padding-top: 6%;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+.view .top .our {
+    font-size: 16px;
+    font-weight: 700;
+    Line-height: 28.8px;
+    color: rgb(30, 178, 166);
+    font-family: var(--mainFont);
+}
+
+.view .top h2 {
+    font-size: 46px;
+    font-weight: 500;
+    Line-height: 64.4px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--mainFont);
+}
+
+.view .div h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--mainFont);
+    padding-bottom: 10px;
+
+}
+
+.view .div span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mainColor);
+    font-family: var(--mainFont);
+    /* padding:5px; */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgb(248, 248, 248);
+
+}
+
+.view .div i {
+    color: var(--mainColor);
+}
+
+.view .div {
+    background-color: white;
+    padding: 30px 20px !important;
+    height: 100%;
+    border-radius: 8px;
+
+}
+
+.view {
+    background-color: rgb(248, 248, 248);
+  
+    padding-top: 4%;
+    padding-bottom: 10%;
+}
+
+.view .colored {
+    background-color: #1eb2a6 !important;
+}
+
+.div:hover {
+    background-color: var(--mainColor);
+    color: white;
+    transition: all .5s;
+}
+
+.div:hover .text h2,
+.div:hover i {
+    color: white;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.footer {
+
+    background-color: rgb(238, 238, 238);
+}
+
+.footer .footc {
+    width: calc((100% - 30px) / 5);
+
+}
+
+.footer .footc.last {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+
+}
+
+.footc h2.b {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.footer .footc .a {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(17, 17, 17);
+    font-family: var(--mainFont);
+}
+
+.footer .footc h4.aa {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(30, 178, 166);
+    font-family: var(--mainFont);
+}
+
+.footer .footc p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    font-family: var(--mainFont);
+}
+
+.footer .footc .social i {
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    padding: 20px 10px;
+}
+
+.footer .footc h2.b {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(17, 17, 17);
+    font-family: var(--mainFont);
+}
+
+.footer .footc .links a {
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+    font-family: var(--mainFont);
+}
+
+.footer .footc img {
+    border-radius: 5px;
+}
+
+.links .a1 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(30, 178, 166);
+    font-family: var(--mainFont);
+}
+
+.links .a2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    font-family: var(--mainFont);
+}
+
+.links h2.cc {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--mainFont);
+}
+
+.footc .links a.cc {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: var(--mainFont);
+}
+
+.links .ii {
+    align-items: baseline;
+}
+
+/*------------------------------------------------------------------------------ */
+footer {
+    background-color: rgb(233, 233, 233);
+    font-family: var(--mainFont);
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+}
+
+/* ------------------------------------------------------------------------------ */
